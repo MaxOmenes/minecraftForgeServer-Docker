@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  mc:
+    container_name: minecraft-srv
+    image: forge-minecraft-srv
+    ports:
+      - 25565:25565
+    restart: unless-stopped
+    volumes:
+      - ./srv:/srv
